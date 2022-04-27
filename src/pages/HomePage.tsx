@@ -7,10 +7,6 @@ function HomePage() {
 	const user = useSelector((state:any) => state.authentication.user);
 	// const dispatch = useDispatch<AppDispatch>();
 
-	// useEffect(() => {
-	// 	dispatch(userActions.getAll());
-	// }, []);
-
 	return (
 		<div className="col-lg-8 offset-lg-2">
 			<h1>Hi {user?.username}!</h1>
